@@ -105,7 +105,7 @@ var loadScene = function (name, incremental, sceneLocation, then) {
 
   var dlCount = 0;
   BABYLON.SceneLoader.Load(
-    "https://holonext.azurewebsites.net/api/v1/scene/magaza" + "/",
+    sceneLocation + name + "/",
     name + incremental + ".babylon",
     engine,
     function (newScene) {
